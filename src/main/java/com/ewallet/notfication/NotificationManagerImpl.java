@@ -37,7 +37,7 @@ public class NotificationManagerImpl implements NotificationManager{
         simpleMailMessage.setText(notificationRequest.getMessage());
         InternetAddress internetAddress = new InternetAddress(paymentUser.getEmail(),"","UTF-8");
         simpleMailMessage.setTo(internetAddress.getAddress());
-        simpleMailMessage.setFrom("geekstutorialemail2020@gmail.com");
+        simpleMailMessage.setFrom("example.com");
 
         javaMailSender.send(simpleMailMessage);
 
